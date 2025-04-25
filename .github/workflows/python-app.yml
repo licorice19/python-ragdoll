@@ -1,8 +1,10 @@
 name: Build Python Application Release
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: ['main']
+    
+  workflow_dispatch:
 
 permissions:
   contents: write
