@@ -3,8 +3,9 @@ name: Build Python Application Release
 on:
   push:
     branches: ['main']
-    
   workflow_dispatch:
+  release:
+    types: [created]  # Trigger on release creation
 
 permissions:
   contents: write
